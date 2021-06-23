@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spam Bot</title>
+  <link rel="stylesheet" href="../css/blogstyle.css">
+</head>
+
+<body>
+
+  <div class="topdiv">
+    <header>EzyGrip</header>
+      <ul class="navigation">
+        <li><a href="#Contact">Contact</a></li>
+        <li><a href="#Blog">Blog</a></li>
+        <li><a href="https://utpal-tech.github.io/EzyGrip.github.io/">Home</a></li>
+      </ul>
+  </div>
+
+  <div class="body">
+      <div class="add">
+        <!-- This Is An Add. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus doloribus tempore voluptate quas aperiam enim asperiores cumque iste! Iure, excepturi.         -->
+      </div>
+
+      <div class="blogsection">
+
+        <div class="blog">
+
+          <img src="/images/SpamBot.png" alt="SpamBoat">
+
+          <heading>
+            Making A Spam Bot
+          </heading>
+
+          <br>
+
+          <discription>
+                <p>Its fun to troll our friends. And in this world of social media its to good to spam our friends account with plenty of messages.</p>
+                <p>For this great pleasure I decided to make something which can help me with this.</p>
+                <p>The following python code autometically types and sends a message to the specified account.</p>
+                <pre>
+import pyautogui, time   
+num = int(input("Enter the number of msg you want to send: "))
+write = input("what do you want to spam: ")
+time.sleep(4)   #we get 4 seconds before the bot starts typing.
+                  It is a good idea to open the the social media 
+                  page before this time runs out.
+while num>0:
+    pyautogui.typewrite(write)   #types the message
+    pyautogui.press("enter")   #presses enter to send the message
+    num = num-1
+    time.sleep(2)
+                </pre>
+
+                <ul>Steps to Make it work
+                    <li>Open your Browser</li>
+                    <li>Login in your account</li>
+                    <li>Run the code</li>
+                    <li>Place the courser in the writing area</li>
+                    <li>Sit back and relax</li>
+                </ul>
+
+          </discription>
+          
+        </div>
+
+    </div>
+
+      <div class="add">
+        <!-- This Is An Add. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores reiciendis, recusandae quo, neque ullam facilis quia unde laborum eligendi dolorem fuga dolorum dolor? Neque ex animi voluptatum fugiat, fugit deleniti? -->
+      </div>
+  </div>
+
+  <div class="contact">
+    <a name="Contact" class="Pageheadings"><h1>Contact Us</h1></a>
+    <p>We feel great when we hear from you. <br>
+    Please feel free to write us at xyz@gmail.com <br>
+    Or you can DM us on instagram @xyz</p>
+    
+  </div>
+
+  <div class="copyrightinfo">
+    &copy;All right reserved by EzyGrip
+  </div>
+
+</body>
+
+</html>

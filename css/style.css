@@ -1,0 +1,173 @@
+body{
+  background-color: rgb(30, 32, 37);
+}
+
+.topdiv{
+  width: 100%;
+  overflow: hidden;
+  /* background-color: rgb(30, 32, 37); */
+  color: white;
+  display: flex;
+  justify-content: space-between;
+}
+
+.topdiv header{
+  margin-top: auto;
+  margin-bottom: auto;
+  font-size: xxx-large;
+  margin-left: 5%;
+}
+
+
+.navigation{
+  text-decoration: none;
+  list-style: none;
+  margin: none;
+  padding-right: 20px;
+}
+
+
+.navigation li{
+  font-size: larger;
+  float: right;
+  padding: 10px;
+}
+
+.topdiv li a:link{
+  text-decoration: none;
+  color: aliceblue;
+}
+
+.topdiv li a:active{
+  color: aliceblue;
+}
+
+.topdiv li a:visited{
+  color: aliceblue;
+}
+
+li:hover{
+  background-color: black;
+  border-radius: 10px;
+}
+
+.imgdiv{
+  overflow: hidden;
+  height: fit-content;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.imgdiv img{
+  width: 100%;
+  height: 540px;
+}
+
+
+/* 
+.landingtext{
+  background: none;
+  width: fit-content;
+  height:inherit;
+  overflow: hidden;
+  position: relative;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+} */
+
+.body{
+  background-color: aliceblue;
+  max-width: 100%;
+  height: fit-content;
+  overflow: hidden;
+  display: flex;
+}
+
+.add{
+  /* height: 500px; */
+  width: 20%;
+}
+
+.blogsection{
+  width: 60%;
+}
+
+.ablog{
+  text-decoration: none;
+  color: black;
+}
+
+.blog{
+  padding: 10px;
+  margin: 10px;
+  border-color: chartreuse;
+  border: solid;
+  margin-block: 85px;
+}
+
+.blog img{
+  padding: 10px;
+  height: 170px;
+  width: 35%;
+  float: left;
+}
+
+.blog heading{
+  font-weight: bolder;
+  font-size: xxx-large;
+}
+
+
+.contact{
+  text-align: center;
+  color: aliceblue;
+}
+
+
+.contact p{
+  font-size: 30px;
+}
+
+.copyrightinfo{
+  text-align: center;
+  color: aliceblue;
+}
+
+
+.Pageheadings{
+  font-size: 30px;
+  text-align: center;
+  justify-content: space-around;
+}
+
+
+
+
+@media screen and (max-width: 475px) {
+  .topdiv{
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .navigation{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+  }
+
+  .blog img{
+    width: -webkit-fill-available;
+    height: 100px;
+  }
+
+  .body{
+    flex-direction: column;
+  }
+
+  .blogsection{
+    width: 100%;
+  }
+}
